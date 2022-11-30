@@ -10,7 +10,6 @@ let searchInput = 'Qatar'
 fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${searchInput}`, options)
     .then(response => response.json())
     .then(response => {
-    
         console.log(response)
         console.log('Icon: ' + response.current.condition.icon)
         console.log('name and country: ' + response.location.name + ' ' + response.location.country)
@@ -28,4 +27,5 @@ fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${searchInput}`, op
         console.log('sunrise: ' + response.forecast.forecastday[0].astro.sunrise)
         console.log('Temperature at 12AM: ' + response.forecast.forecastday[0].hour[12].temp_c)
         console.log('Temperature at 9PM: ' + response.forecast.forecastday[0].hour[21].temp_c)
+        console.log('visibility in km: ' + response.current.vis_km)
     })
