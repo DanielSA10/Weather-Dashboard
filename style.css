@@ -173,3 +173,16 @@ input {
 .windTitle {
     padding-bottom: 10px;
 }
+
+
+.sunrise, .sunset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rise, .set {
+    display: flex;
+    align-items: center;
+}
