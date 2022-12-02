@@ -1,5 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    background-color: rgb(37, 60, 94);
+}
+
+.wrapper {
+    width: 90vw;
+    background-color: rgb(46, 74, 116);
+    border-radius: 30px;
+}
+
+.firstContainer, .secondContainer {
+    padding: 1rem;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+}
+
+.firstContentText {
+    padding: 2rem 0rem;
+    color: #fff;
+}
+
+.name {
+    padding-bottom: 10px;
+}
+
+.firstContentDegrees {
+    font-size: 4rem;
+    padding-top: 60px;
+}
+
+.firstContentDegrees, .firstContentState {
+    text-align: center;
+    color: #fff;
+}
+
+/***Second Content**************************************************/
+
+.secondContainer {
+    background-color:rgb(241, 241, 241);
+}
+
+.secondContainer {
+    border: none;
+    border-radius: 30px;
+}
+
+.forecast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.forecastCard {
+    background-color: #fff;
+    width: 130px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.forecastDay {
+    padding-bottom: 10px;
+}
+
+.forecastTime {
+    padding-bottom: 0px;
+}
+
+
+/***Second Content****hightlights*********************************************/
+
+.highlights {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.highligtCard {
+    background-color: #fff;
+    width: 230px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem;
+}
+.highligtCardTitle p{
+    opacity: 80%;
+}
+
+.highligtContent{
+    display: flex;
+    justify-content: center;
+}
+.highligtContent span{
+    opacity: 70%;
+}
+
+.highlightUV {
+    padding-bottom: 40%;
+}
+
+.highlightMeter {
+    width:40px;
+    height: 150px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+}
+
+.highlightBall {
+    width: 30px;
+    height:30px;
+    background-color: rgb(77, 118, 231);
+    border-radius: 50%;
+}
+
+/*Ball top position*/
+.UVBall {
+    position: absolute;
+    top:10px;
+    left:5px;
+}
+
+    /*Ball mid position*/
+.visBall{
+    position: absolute;
+    top:60px;
+    left:5px;
+    background-color: rgb(251,223,77);
+}
+    /*Ball bottom position*/
+.airBall {
+    position: absolute;
+    bottom:10px;
+    left:5px;
+    background-color: rgb(226, 49, 49);
+}
+
+.windNumber {
+    font-size: 2rem;
+    padding-right: 5px;
+}
+
+.windTitle {
+    padding-bottom: 10px;
 }
