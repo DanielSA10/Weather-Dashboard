@@ -186,3 +186,14 @@ input {
     display: flex;
     align-items: center;
 }
+
+/*****Responsive - to desktop***************************************************/
+
+@media (min-width: 1000px) {
+    .wrapper {
+        display: flex;
+    }
+    .secondContainer {
+        width:100%;
+    }
+}
