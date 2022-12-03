@@ -76,7 +76,7 @@ input {
 
 .forecastCard {
     background-color: #fff;
-    width: 100px;
+    width: 80px;
     text-align: center;
     border: none;
     border-radius: 20px;
@@ -121,6 +121,7 @@ input {
 .highligtContent{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .highligtContent span{
     opacity: 70%;
@@ -195,6 +196,7 @@ input {
 @media (min-width: 1000px) {
     .wrapper {
         display: flex;
+        width:70vw;
     }
     .secondContainer {
         width:100%;
