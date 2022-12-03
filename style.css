@@ -76,12 +76,15 @@ input {
 
 .forecastCard {
     background-color: #fff;
-    width: 130px;
+    width: 100px;
     text-align: center;
     border: none;
     border-radius: 20px;
     padding: 1rem;
     margin: 1rem;
+}
+.forecastIcon img{
+    width:40px;
 }
 
 .forecastDay {
@@ -195,5 +198,15 @@ input {
     }
     .secondContainer {
         width:100%;
+    }
+    .forecast {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .highlightRowOne, .highlightRowTwo {
+        display: flex;
+
+
     }
 }
