@@ -13,14 +13,14 @@
         <div class="firstContainer">
             <div class="firstContent">
                 <form>
-                    <input type="text" placeholder="Search places...">
+                    <input type="text" placeholder="Search places..." class="inputCountry">
                 </form>
                 <div class="firstContentText">
-                   <p class="name">New York, USA</p>
-                   <p class="time">28 Sept</p>
+                   <p class="name"></p>
+                   <p class="time"></p>
                 </div>
                 <div class="firstContentDegrees">
-                    <p>27°</p>
+                    <p></p>
                 </div>
                 <div class="firstContentState">
                     <p>Cloudy</p>
@@ -33,7 +33,7 @@
                 <div class="forecast">
                     <!--CARDS-->
                     <div class="forecastCard">
-                        <div class="forecastTime">
+                        <div class="forecastTime ">
                             <p>20:00</p>
                         </div>
                         <div class="forecastIcon">
@@ -118,15 +118,15 @@
 
                     <div class="highligtCard">
                         <div class="highligtCardTitle">
-                            <p>Wind Status</p>
+                            <p>Chance of rain</p>
                         </div>
                         <div class="highligtContent">
-                            <div class="highlightInfo">
-                                <p class="highlightUV">5%</p>
-                                <p>Status: <span>Good Qualty</span></p>
+                            <div class="highlightInfo rainText">
+                                <p class="highlightRain"></p>
+                                <p>Status: <span class="rainSpan"></span></p>
                             </div>
                             <div class="highlightMeter">
-                                <div class="UVBall highlightBall"></div>
+                                <div class="rainBall highlightBall"></div>
                             </div>
                         </div>
                     </div>
@@ -134,8 +134,12 @@
                         <div class="highligtCardTitle">
                             <p>Wind Status</p>
                         </div>
-                        <div class="highligtContent">
-                            <p class="windNumber">8.70</p><span>km/h</span>
+                        <div class="highligtContent windContent">
+                            <p class="windNumber"></p> <span>/km</span>
+                        </div>
+                        <div class="windFeelsLike">
+                            <img src="/compass.png" alt="">
+                            <p></p>
                         </div>
                     </div>
                     <div class="highligtCard">
@@ -145,13 +149,13 @@
                         <div class="sunrise highligtContent">
                             <div class="rise">
                                 <img src="/weather icons/64x64/day/113.png" alt="">
-                                <p>6:30 AM</p>
+                                <p class="sunImg"></p>
                             </div>
                         </div>
                         <div class="sunset">
                             <div class="set">
                                 <img src="/weather icons/64x64/day/113.png" alt="">
-                                <p>5:45 PM</p>
+                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -161,15 +165,15 @@
 
                     <div class="highligtCard">
                         <div class="highligtCardTitle">
-                            <p>Wind Status</p>
+                            <p>Humidity</p>
                         </div>
                         <div class="highligtContent">
                             <div class="highlightInfo">
-                                <p class="highlightUV">5%</p>
-                                <p>Status: <span>Good Qualty</span></p>
+                                <p class="highlightHumidity"></p>
+                                <p>Status: <span class="humiditySpan"></span></p>
                             </div>
                             <div class="highlightMeter">
-                                <div class="UVBall highlightBall"></div>
+                                <div class="humidityBall highlightBall"></div>
                             </div>
                         </div>
                     </div>
@@ -179,8 +183,8 @@
                         </div>
                         <div class="highligtContent">
                             <div class="highlightInfo">
-                                <p class="highlightUV">5%</p>
-                                <p>Status: <span>Good Qualty</span></p>
+                                <p class="highlightVis"></p>
+                                <p>Status: <span class="higlightSpan"></span></p>
                             </div>
                             <div class="highlightMeter">
                                 <div class="visBall highlightBall"></div>
@@ -189,15 +193,15 @@
                     </div>
                     <div class="highligtCard">
                         <div class="highligtCardTitle">
-                            <p>Air Quality</p>
+                            <p>UV Index</p>
                         </div>
                         <div class="highligtContent">
-                            <div class="highlightInfo">
-                                <p class="highlightUV">5%</p>
-                                <p>Status: <span>Good Qualty</span></p>
+                            <div class="highlightInfo UVText">
+                                <p class="highlightUV"></p>
+                                <p>Status: <span></span></p>
                             </div>
                             <div class="highlightMeter">
-                                <div class="airBall highlightBall"></div>
+                                <div class="UvBall highlightBall"></div>
                             </div>
                         </div>
                     </div>

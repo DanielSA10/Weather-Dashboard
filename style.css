@@ -23,6 +23,13 @@ body {
 
 .firstContainer, .secondContainer {
     padding: 1rem;
+    z-index: 5;
+}
+.wrapper {
+    background-image: url(/img/Night/2308.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: right;
 }
 
 form {
@@ -143,35 +150,49 @@ input {
 .highlightBall {
     width: 30px;
     height:30px;
-    background-color: rgb(77, 118, 231);
+    background-color: #4d76e7;
     border-radius: 50%;
+    position: absolute;
+    top:10px;
+    left:5px;
 }
 
 /*Ball top position*/
-.UVBall {
+.top {
     position: absolute;
     top:10px;
     left:5px;
 }
 
     /*Ball mid position*/
-.visBall{
+.mid{
     position: absolute;
     top:60px;
     left:5px;
-    background-color: rgb(251,223,77);
+    background-color: #fbdf4d;
 }
     /*Ball bottom position*/
-.airBall {
+.bot {
     position: absolute;
-    bottom:10px;
+    top:110px;
     left:5px;
-    background-color: rgb(226, 49, 49);
+    background-color: #e23131;
 }
 
 .windNumber {
     font-size: 2rem;
     padding-right: 5px;
+    color: #000;
+}
+.windFeelsLike {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-left: 10px;
+}
+.windFeelsLike img {
+    width:32px;
+    margin-right: 10px;
 }
 
 .windTitle {
@@ -208,7 +229,13 @@ input {
 
     .highlightRowOne, .highlightRowTwo {
         display: flex;
-
-
+    }
+    .windFeelsLike {
+        padding-top: 1rem;
+        justify-content:left;
+    }
+    .windNumber {
+        padding-top: 25px;
+        font-size: 3rem;
     }
 }
