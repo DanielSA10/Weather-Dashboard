@@ -134,8 +134,12 @@ input {
     opacity: 70%;
 }
 
+.highlightVis, .highlightHumidity {
+    padding-bottom: 50px;
+}
+
 .highlightUV {
-    padding-bottom: 40%;
+    padding-bottom: 30px;
 }
 
 .highlightMeter {
