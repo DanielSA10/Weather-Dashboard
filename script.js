@@ -6,7 +6,7 @@ const options = {
 	}
 };
 let inputCountry = document.querySelector('.inputCountry')
-let searchInput = 'Qatar'
+let searchInput = 'Thisted'
 fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${searchInput}`, options)
     .then(response => response.json())
     .then(response => {
@@ -35,7 +35,7 @@ fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${searchInput}`, op
         let time = document.querySelector('.time')
         time.innerText = response.location.localtime
         let temperature = document.querySelector('.firstContentDegrees')
-        temperature.innerText = response.current.temp_c + '°'
+        temperature.innerText = Math.floor(response.current.temp_c) + '°'
 
 /*Second Container*/
         /*Chance of rain*/
