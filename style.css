@@ -8,29 +8,31 @@
 
 }
 body {
+
+    padding-top: 4rem;
+    background-color: rgb(37, 60, 94);
+
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem;
-    background-color: rgb(37, 60, 94);
 }
 
 .wrapper {
-    width: 90vw;
+    width:90vw;
+    max-width: 100rem;
     background-color: rgb(46, 74, 116);
     border-radius: 30px;
+    background-image: url(/img/Night/2308.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: right;
 }
 
 .firstContainer, .secondContainer {
     padding: 1rem;
     z-index: 5;
 }
-.wrapper {
-    background-image: url(/img/Night/2308.jpg);
-    background-repeat: none;
-    background-size: cover;
-    background-position: right;
-}
+
 
 form {
     text-align: center;
@@ -66,19 +68,20 @@ input {
 /***Second Content**************************************************/
 
 .secondContainer {
+    border: none;
+    border-radius: 30px;
     background-color:rgb(241, 241, 241);
 }
 
-.secondContainer {
-    border: none;
-    border-radius: 30px;
-}
-
 .forecast {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(85px, 100px));
+    place-items: center;
+   
 }
 
 .forecastCard {
@@ -111,6 +114,17 @@ input {
     align-items: center;
     flex-direction: column;
 }
+
+/* .test {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    place-items: center;
+} */
+
+/* .hightlightsTitle {
+    text-align: start;
+} */
 
 .highligtCard {
     background-color: #fff;
@@ -218,22 +232,40 @@ input {
 
 /*****Responsive - to desktop***************************************************/
 
-@media (min-width: 1000px) {
+@media (min-width:900px) {
+    .highlights {
+        /* display: flex; */
+    }
+    .highlightRowOne, .highlightRowTwo {
+        display: flex;
+        flex-direction: row;
+    }
+    .forecast {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1160px) {
     .wrapper {
         display: flex;
-        width:70vw;
+        /* width:70vw; */
     }
-    .secondContainer {
+     .secondContainer {
         width:100%;
     }
     .forecast {
         display: flex;
-        flex-direction: row;
+        justify-content: center;
     }
+
+/*
 
     .highlightRowOne, .highlightRowTwo {
         display: flex;
-    }
+        flex-direction: row;
+    } */
+    /* 
     .windFeelsLike {
         padding-top: 1rem;
         justify-content:left;
@@ -241,5 +273,5 @@ input {
     .windNumber {
         padding-top: 25px;
         font-size: 3rem;
-    }
+    } */
 }
