@@ -5,8 +5,9 @@ const options = {
 		'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
 	}
 };
-let inputCountry = document.querySelector('.inputCountry')
-let searchInput = 'Thisted'
+let inputCountry = document.querySelector('#inputCountry')
+
+let searchInput = 'thisted'
 fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${searchInput}`, options)
     .then(response => response.json())
     .then(response => {
@@ -29,15 +30,27 @@ fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${searchInput}`, op
         console.log('Temperature at 9PM: ' + response.forecast.forecastday[0].hour[21].temp_c)
         console.log('visibility in km: ' + response.current.vis_km)
     
-/*First Container*/
+        /*First Container*/
         let name = document.querySelector('.name')
         name.innerText = response.location.name
         let time = document.querySelector('.time')
         time.innerText = response.location.localtime
         let temperature = document.querySelector('.firstContentDegrees')
         temperature.innerText = Math.floor(response.current.temp_c) + '°'
+        
+        /*Second Container*/
+        
+        /*Forecast*/
+        // let handler = response.location.localtime.substring(11)
+        // console.log(parseInt(handler))
 
-/*Second Container*/
+        // if(parseInt(handler) < 14) {
+        //     console.log(response.forecast.forecastday[0].hour[14].time.substring(11))
+        // }
+        // for(let i = 0; i<parseInt(handler); i++) {
+        // console.log(response.forecast.forecastday[0].hour[12].time.substring(11))
+        // }
+        
         /*Chance of rain*/
         let rainStatus = document.querySelector('.highlightRain')
         let rainBall = document.querySelector('.rainBall')
@@ -125,8 +138,7 @@ fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${searchInput}`, op
             uvBall.classList.add('mid')
             qualityText.innerText = 'Medium Quality'
             qualityText.style.color = '#fbdf4d'
-        }
-        else{
+        } else{
             UV.innerText = response.current.uv
             uvBall.classList.add('bot')
             qualityText.innerText = 'Bad Quality'
