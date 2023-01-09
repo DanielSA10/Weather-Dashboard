@@ -19,7 +19,7 @@ body {
 
 .wrapper {
     width:90vw;
-    max-width: 100rem;
+    max-width: 80rem;
     background-color: rgb(46, 74, 116);
     border-radius: 30px;
     background-image: url(/img/Night/2308.jpg);
@@ -234,7 +234,7 @@ input {
 
 @media (min-width:900px) {
     .highlights {
-        /* display: flex; */
+        
     }
     .highlightRowOne, .highlightRowTwo {
         display: flex;
