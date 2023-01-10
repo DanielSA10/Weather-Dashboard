@@ -30,7 +30,7 @@ fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${searchInput}`, op
         console.log('Temperature at 9PM: ' + response.forecast.forecastday[0].hour[21].temp_c)
         console.log('visibility in km: ' + response.current.vis_km)
     
-        /*First Container*/
+    //First Container
         let name = document.querySelector('.name')
         name.innerText = response.location.name
         let time = document.querySelector('.time')
@@ -38,20 +38,26 @@ fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${searchInput}`, op
         let temperature = document.querySelector('.firstContentDegrees')
         temperature.innerText = Math.floor(response.current.temp_c) + '°'
         
-        /*Second Container*/
+        let today = new Date();
+        let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+        let timer = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        let dateTime = date+' '+timer;
         
-        /*Forecast*/
-        // let handler = response.location.localtime.substring(11)
-        // console.log(parseInt(handler))
+        console.log(parseInt(dateTime.substring(10)))
+        let wrapper = document.querySelector('.wrapper')
+        if(parseInt(dateTime.substring(10)) < 09) {
+            wrapper.style.backgroundImage = "url(/img/Morning/morning.jpg)"
+        } else if (parseInt(dateTime.substring(10)) < 17) {
+            wrapper.style.backgroundImage = "url(/img/Midday/midday.jpg)"
+        } else if (parseInt(dateTime.substring(10)) < 21) {
+            wrapper.style.backgroundImage = "url(/img/Evening/evening.jpg)"
+        } else {
+            wrapper.style.backgroundImage = "url(/img/Night/night.jpg)"
+        }
 
-        // if(parseInt(handler) < 14) {
-        //     console.log(response.forecast.forecastday[0].hour[14].time.substring(11))
-        // }
-        // for(let i = 0; i<parseInt(handler); i++) {
-        // console.log(response.forecast.forecastday[0].hour[12].time.substring(11))
-        // }
-        
-        /*Chance of rain*/
+
+    //Second Container
+        //Chance of rain
         let rainStatus = document.querySelector('.highlightRain')
         let rainBall = document.querySelector('.rainBall')
         let rainText = document.querySelector('.rainSpan')

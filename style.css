@@ -22,7 +22,7 @@ body {
     max-width: 80rem;
     background-color: rgb(46, 74, 116);
     border-radius: 30px;
-    background-image: url(/img/Night/2308.jpg);
+    /* background-image: url(/img/Night/2308.jpg); */
     background-repeat: none;
     background-size: cover;
     background-position: right;
