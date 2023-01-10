@@ -4,8 +4,7 @@ PROBLEMS:
 
 > Fix Search Bar
 
-> Add sunrise & sunset icons 
-
+>Fix various styling issues with some highlight boxes
 
 
 FIXED: 
@@ -13,3 +12,5 @@ FIXED:
 > Figure out how to make forecast
 
 > Make the left background change dynamically
+
+> Add sunrise & sunset icons 

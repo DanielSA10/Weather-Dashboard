@@ -22,7 +22,7 @@ body {
     max-width: 80rem;
     background-color: rgb(46, 74, 116);
     border-radius: 30px;
-    /* background-image: url(/img/Night/2308.jpg); */
+
     background-repeat: none;
     background-size: cover;
     background-position: right;
@@ -73,38 +73,6 @@ input {
     background-color:rgb(241, 241, 241);
 }
 
-.forecast {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(85px, 100px));
-    place-items: center;
-   
-}
-
-.forecastCard {
-    background-color: #fff;
-    width: 80px;
-    text-align: center;
-    border: none;
-    border-radius: 20px;
-    padding: 1rem;
-    margin: 1rem;
-}
-.forecastIcon img{
-    width:40px;
-}
-
-.forecastDay {
-    padding-bottom: 10px;
-}
-
-.forecastTime {
-    padding-bottom: 0px;
-}
-
 
 /***Second Content****hightlights*********************************************/
 
@@ -114,17 +82,6 @@ input {
     align-items: center;
     flex-direction: column;
 }
-
-/* .test {
-    
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    place-items: center;
-} */
-
-/* .hightlightsTitle {
-    text-align: start;
-} */
 
 .highligtCard {
     background-color: #fff;
@@ -209,8 +166,13 @@ input {
     padding-left: 10px;
 }
 .windFeelsLike img {
-    width:32px;
+    width:50px;
     margin-right: 10px;
+    margin-top: 50px;
+}
+
+.windFeelsLike p {
+    margin-top: 80px;
 }
 
 .windTitle {
@@ -219,15 +181,20 @@ input {
 
 
 .sunrise, .sunset{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
 .rise, .set {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
+}
+
+.sunrise img {
+    width: 50px;
+    height:50px;
 }
 
 /*****Responsive - to desktop***************************************************/

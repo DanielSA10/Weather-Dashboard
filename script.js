@@ -83,12 +83,10 @@ fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${searchInput}`, op
         windNumber.innerText = response.current.wind_kph
         windFeelsLike.innerText = response.current.wind_dir
         /*Sunrise and sunset*/
-        let sunrise = document.querySelector('.rise')
-        let sunImg = document.querySelector('.sunImg')
-        let sunset = document.querySelector('.set')
+        let sunrise = document.querySelector('.riseText')
+        let sunset = document.querySelector('.setText')
         sunrise.innerText = response.forecast.forecastday[0].astro.sunrise
         sunset.innerText = response.forecast.forecastday[0].astro.sunset
-        sunImg.innerText = "/weather icons/64x64/day/113.png"
         /*Humidity*/
         let humidity = document.querySelector('.highlightHumidity')
         let humidityBall = document.querySelector('.humidityBall')
