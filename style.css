@@ -94,6 +94,8 @@ input {
 }
 .highligtCardTitle p{
     opacity: 80%;
+    font-weight: 500;
+    text-align: left;
 }
 
 .highligtContent{
@@ -119,6 +121,7 @@ input {
     background-color: #ddd;
     border: none;
     border-radius: 30px;
+    margin-left: 20px;
     position: relative;
 }
 
