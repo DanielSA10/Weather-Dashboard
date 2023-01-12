@@ -46,6 +46,18 @@ input {
     padding: 10px;
 }
 
+.inputBtn {
+    padding:5px 30px;
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin: 5px 0px;
+}
+
+.btnWrapper {
+    text-align: Center;
+}
+
 .firstContentText {
     padding: 2rem 0rem;
     color: #fff;
@@ -182,37 +194,17 @@ input {
     padding-bottom: 10px;
 }
 
-
-.sunrise, .sunset{
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
-}
-
-.rise, .set {
-    /* display: flex;
-    align-items: center; */
-}
-
 .sunrise img {
     width: 50px;
     height:50px;
 }
 
-/*****Responsive - to desktop***************************************************/
+/* Responsive - to desktop **************************************/
 
 @media (min-width:900px) {
-    .highlights {
-        
-    }
     .highlightRowOne, .highlightRowTwo {
         display: flex;
         flex-direction: row;
-    }
-    .forecast {
-        display: flex;
-        justify-content: center;
     }
 }
 
@@ -221,27 +213,9 @@ input {
         display: flex;
         /* width:70vw; */
     }
-     .secondContainer {
+    .btnWrapper {
+        text-align: Start;
+    }
+    .secondContainer {
         width:100%;
     }
-    .forecast {
-        display: flex;
-        justify-content: center;
-    }
-
-/*
-
-    .highlightRowOne, .highlightRowTwo {
-        display: flex;
-        flex-direction: row;
-    } */
-    /* 
-    .windFeelsLike {
-        padding-top: 1rem;
-        justify-content:left;
-    }
-    .windNumber {
-        padding-top: 25px;
-        font-size: 3rem;
-    } */
-}

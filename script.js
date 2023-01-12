@@ -1,4 +1,4 @@
-let testbtn = document.querySelector('.testbtn')
+let inputBtn = document.querySelector('.inputBtn')
 let inputCountry = document.querySelector('#inputCountry')
 inputCountry.value = ""
 
@@ -22,7 +22,7 @@ function handleDate() {
     }
 }
 
-testbtn.addEventListener('click', e => {
+inputBtn.addEventListener('click', e => {
     e.preventDefault()
     const options = {
         method: 'GET',
