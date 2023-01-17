@@ -27,7 +27,7 @@ inputBtn.addEventListener('click', e => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'b41ac54e79msh4cbeef0015cfe61p18edebjsnd9c29c515f10',
+            'X-RapidAPI-Key': '',
             'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
         }
     };
